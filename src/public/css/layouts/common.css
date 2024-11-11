@@ -1,0 +1,13 @@
+.header{
+    background-color: black;
+}
+
+.header_layout{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.coachtech_flea_market_logo{
+    content: url(../img/logo.svg);
+}
