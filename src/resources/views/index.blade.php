@@ -16,10 +16,13 @@
             </div>
         </div>
     </article>
-    <section>
-        <div>
-            <div></div>
-            <div></div>
+    <section class="merchandise">
+        <div class="merchandise_card">
+            <div class="card_img">
+                <img src="images/Armani+Mens+Clock.jpg" alt="腕時計">
+            </div>
+            <h3 class="card_ttl">腕時計</h3>
+            <p>スタイリッシュなデザインのメンズ腕時計</p>
         </div>
     </section>
 </div>
