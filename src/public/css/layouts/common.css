@@ -7,7 +7,63 @@
     justify-content: space-between;
 }
 
+.coachtech_logo_svg{
+    width: 90%;
+}
 
-.coachtech_flea_market_logo{
-    content: url(../img/logo.svg);
+.search_box {
+    width: 30%;
+}
+
+.search {
+    width: 100%;
+    height: 40px;
+    margin: 10px auto;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    width: 30%;
+    height: 20px;
+    padding: 20px;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.mypage{
+    color: white;
+}
+
+.logout{
+    color: white;
+}
+
+.mypage:hover{
+    color: #ff7f50;
+}
+
+.logout:hover{
+    color: #ff7f50;
+}
+
+.sell{
+    color: black;
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0 12px;
+}
+
+.sell:hover{
+    color: white;
+    background-color: #ff7f50;
 }

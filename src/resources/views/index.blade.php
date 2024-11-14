@@ -5,13 +5,15 @@
 @endsection
 
 @section('content')
-<div>
-    <article>
-        <div>
-            <a href="">おすすめ</a>
-        </div>
-        <div>
-            <a href="">マイリスト</a>
+<div class="main">
+    <article class="category">
+        <div class="category_title">
+            <div class="category_rec">
+                <a class="rec" href="">おすすめ</a>
+            </div>
+            <div class="category_my_list">
+                <a class="my_list" href="">マイリスト</a>
+            </div>
         </div>
     </article>
     <section>

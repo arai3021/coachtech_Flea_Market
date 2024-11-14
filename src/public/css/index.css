@@ -1,0 +1,21 @@
+.category{
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+.category_title{
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px 200px 0;
+    gap: 120px;
+}
+
+.category_title a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.category_title a:hover{
+    color: #ff7f50;
+}
