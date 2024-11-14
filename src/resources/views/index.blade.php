@@ -9,14 +9,15 @@
     <article class="category">
         <div class="category_title">
             <div class="category_rec">
-                <a class="rec" href="">おすすめ</a>
+                <a class="rec" href="{{ url('/') }}?tab=rec">おすすめ</a>
             </div>
             <div class="category_my_list">
-                <a class="my_list" href="">マイリスト</a>
+                <a class="my_list" href="{{ url('/') }}?tab=my_list">マイリスト</a>
             </div>
         </div>
     </article>
 <!---------------------- 下記から商品欄 ---------------------->
+@if ($tab === 'rec')
     <section class="merchandise">
         <div class="merchandise_card">
             <div class="card_img">
@@ -149,5 +150,12 @@
             </div>
         </div>
     </section>
+
+<!---------------------- マイリスト ---------------------->
+@elseif ($tab === 'my_list')
+
+@else
+
+@endif
 </div>
 @endsection

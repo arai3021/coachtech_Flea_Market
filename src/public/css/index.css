@@ -6,8 +6,8 @@
 .category_title{
     display: flex;
     justify-content: flex-start;
-    margin: 50px 200px 0;
-    gap: 120px;
+    margin: 50px 200px 15px;
+    gap: 130px;
 }
 
 .category_title a{
@@ -20,7 +20,9 @@
     color: #ff7f50;
 }
 
+
 /* 商品欄↓ */
+
 
 .merchandise{
     display: flex;
@@ -36,6 +38,11 @@
     border-radius: 10px;
 }
 
+.merchandise_card:hover{
+    opacity: 0.6;
+    color: white;
+}
+
 .card_img img{
     width: 100%;
     border-radius: 10px 10px 0 0;
@@ -43,6 +50,7 @@
 
 .card_content{
     padding: 15px 20px;
+    color: black;
 }
 
 .card_ttl{
