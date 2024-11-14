@@ -19,3 +19,49 @@
 .category_title a:hover{
     color: #ff7f50;
 }
+
+/* 商品欄↓ */
+
+.merchandise{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 20px auto;
+}
+
+.merchandise_card{
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.card_img img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card_content{
+    padding: 15px 20px;
+}
+
+.card_ttl{
+    display: inline;
+    padding: 3px 8px;
+    border-radius: 3px;
+    background-color: #006a6c;
+    color: white;
+}
+
+.detail{
+    text-align: right;
+}
+
+.price{
+    font-size: 20px;
+}
+
+.condition{
+    display: inline;
+    color: gray;
+}
