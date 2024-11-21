@@ -17,21 +17,23 @@
         </div>
     </article>
 <!---------------------- 下記から商品欄 ---------------------->
-@if ($tab === 'rec')
     <section class="merchandise">
+    @foreach ($merchandise as $item)
         <div class="merchandise_card">
             <div class="card_img">
-                <img src="images/Armani+Mens+Clock.jpg" alt="腕時計">
+                <img src="{{ $item->image_url }}" alt="{{ $item->name }}">
             </div>
             <div class="card_content">
-                <h3 class="card_ttl">腕時計</h3>
-                <p class="explanation">スタイリッシュなデザインのメンズ腕時計</p>
+                <h3 class="card_ttl">{{ $item->name }}</h3>
+                <p class="explanation">{{ $item->description }}</p>
                 <div class="detail">
-                    <p class="price">¥15,000</p>
-                    <p class="condition">良好</p>
+                    <p class="price">{{ number_format($item->price, 2) }}</p>
+                    <p class="condition">{{ $item->condition }}</p>
                 </div>
             </div>
         </div>
+    @endforeach
+    <!--
         <div class="merchandise_card">
             <div class="card_img">
                 <img src="images/HDD+Hard+Disk.jpg" alt="HDD">
@@ -149,13 +151,15 @@
                 </div>
             </div>
         </div>
+-->
     </section>
 
 <!---------------------- マイリスト ---------------------->
-@elseif ($tab === 'my_list')
-
-@else
+<!--
+@if ($tab === 'my_list')
 
 @endif
+-->
+
 </div>
 @endsection

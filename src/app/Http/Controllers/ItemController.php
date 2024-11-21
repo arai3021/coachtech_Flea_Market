@@ -2,23 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\merchandise;
+use App\Models\cart;
+use App\Models\order_line;
+
 use Illuminate\Http\Request;
 
 class ItemController extends Controller
 {
     public function index(Request $request)
     {
-        $tab = $request->query('tab', 'default');
+        $merchandise = Merchandise::all();
+        $tab = 'my_list';
 
-        $data = [];
-
-        if($tab === 'rec'){
-            $data = $this->getRecData();
-        }elseif($tab === 'favorites'){
-            $data = $this->getMy_ListData();
-        }
-
-        return view('index', compact('tab', 'data'));
+        return view('index', compact('merchandise', 'tab'));
     }
 }
 
