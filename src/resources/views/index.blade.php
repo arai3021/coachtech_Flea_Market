@@ -18,17 +18,17 @@
     </article>
 <!---------------------- 下記から商品欄 ---------------------->
     <section class="merchandise">
-    @foreach ($merchandise as $item)
+    @foreach ($product as $products)
         <div class="merchandise_card">
             <div class="card_img">
-                <img src="{{ $item->image_url }}" alt="{{ $item->name }}">
+                <img src="{{ $product->image_path }}" alt="{{ $product->name }}">
             </div>
             <div class="card_content">
-                <h3 class="card_ttl">{{ $item->name }}</h3>
-                <p class="explanation">{{ $item->description }}</p>
+                <h3 class="card_ttl">{{ $product->name }}</h3>
+                <p class="explanation">{{ $product->description }}</p>
                 <div class="detail">
-                    <p class="price">{{ number_format($item->price, 2) }}</p>
-                    <p class="condition">{{ $item->condition }}</p>
+                    <p class="price">{{ number_format($product->price, 2) }}</p>
+                    <p class="condition">{{ $product->condition }}</p>
                 </div>
             </div>
         </div>

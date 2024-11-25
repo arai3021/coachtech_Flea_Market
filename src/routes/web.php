@@ -15,3 +15,7 @@ use App\Http\Controllers\ItemController;
 */
 
 Route::get('/', [ItemController::class, 'index']);
+Route::get('/sell', [ItemController::class, 'sell']);
+Route::post('/', [ItemController::class, 'product']);
+/* Route::post('/product-data', [ItemController::class, 'product'])->name('productData'); */
+
